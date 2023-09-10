@@ -1,0 +1,21 @@
+.content-header {
+   display: none;
+}
+.content-wrapper {
+   background-color: #fff;
+ }
+ 
+ h3 {
+   font-size: 1.8rem;
+   margin-bottom: 0;
+}
+#imgAccueil, #titleAccueil {
+   padding-top: 160px;
+   text-align: center;
+ }
+#textAccueil, #NomApp, #titleAccueil{
+ font-family: 'Karla', sans-serif  !important;
+}
+#textAccueilAccess{
+   color: #215573;
+}

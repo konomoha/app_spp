@@ -1,0 +1,721 @@
+.conteneur_onglets{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.conteneur_onglets p{
+    border: solid 1px black!important;
+    font-size: 1.4rem;
+    width: 10%!important;
+    margin: 5px;
+}
+
+h1{
+    text-align: center;
+}
+
+#echeance_title, #dossier_title{
+    margin: 15px 0px;
+}
+
+h2{
+    font-size: 2.3rem;
+    font-weight: bold;
+    margin-top: 0px;
+    padding-left: 1rem;
+}
+
+.demande_title{
+    margin: 25px 0px;
+}
+
+hr{
+    height: 2px;
+    background-color: rgb(185, 185, 185);
+    border: none;
+}
+
+.hr_datatable{
+    height: 2px;
+    background-color: rgb(185, 185, 185);
+    border: none;
+    margin-bottom: 5px;
+}
+
+.btn_mandatory{
+    color: red;
+    font-size: 1.825rem;
+}
+
+.conteneur_form{
+    display: flex;
+    justify-content: space-around;
+    background-color: #dcdddf;
+    padding: 15px;
+    border-radius: 10px;
+
+}
+
+.cle_form{
+    margin-top: 10px;
+}
+
+.form_row{
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 5px;
+}
+
+.form_row label{
+    margin-top: 5px!important;
+    margin-right: 5px;
+}
+
+.conteneur_bouton_recherche, .conteneur_bouton{
+    display: flex;
+    justify-content: end;
+    margin: 15px 5px;
+}
+
+@keyframes glowing {
+    0% {
+      background-color: #2f759e;
+      box-shadow: 0 0 0px #2f759e;
+    }
+    50% {
+      background-color: #73c2f0;
+      box-shadow: 0 0 8px #73c2f0;
+    }
+    100% {
+      background-color: #2f759e;
+      box-shadow: 0 0 0px #2f759e;
+    }
+}
+
+.bouton_assure_actif{
+
+animation: glowing 1300ms infinite;
+}
+
+.nouvelle_demande_demande_agentCausal{
+    margin-bottom: 10px;
+}
+
+.dossier_detail{
+
+    color: #296486;
+    font-size: 2rem;
+}
+
+.dossier_hourglass, .dossier_lock{
+    color: rgb(129, 129, 129);
+}
+
+#dossierTabHead, #echeanceTabHead, #adminHead{
+    background-color: #3c8dbc;
+    color: white;
+}
+
+#dossierTabBody tr:nth-child(even), #echeanceTabBody tr:nth-child(even), #adminBody tr:nth-child(even){
+
+    background-color: rgb(224, 224, 224);
+
+}
+
+#echeanceTabBody tr td, #dossierTabBody tr td{
+    vertical-align: middle;
+}
+
+#echeanceTabBody tr td{
+    padding: 13px;
+}
+
+#conteneur_raison_cloture{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    margin: 0px auto;
+}
+
+#raison_cloture_input{
+    width: 50%;
+    margin-bottom: 15px;
+}
+
+#spinRaison{
+    margin-left: 15px;
+}
+
+.spin_admin, .spin_admin2, .spin_admin3{
+    margin: 10px auto;
+}
+
+.spin {
+    border: 4px solid #cfd0d1;
+    border-bottom-color: #1c87c9;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    -webkit-animation: spin 1.5s linear infinite;
+    animation: spin 1.5s linear infinite;
+  }
+  @-webkit-keyframes spin {
+    0% {
+      -webkit-transform: rotate(0deg);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+    }
+  }
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+#consultation_title{
+font-size: 35px;
+margin-bottom: 20px;
+}
+
+.consultation_subtitle{
+font-size: 2rem;
+font-weight: normal;
+margin-top: 15px;
+}
+
+.synthese_dossier{
+background-color: #cfe2eeb7;
+margin-bottom: 20px;
+}
+
+.synthese_dossier ul{
+padding: 10px;
+}
+
+.synthese_dossier ul li{
+list-style-type: none;
+font-size: 1.5rem;
+font-weight: bold;
+text-align: end;
+margin-right: 10px;
+}
+
+.synthese_dossier ul li span{
+font-weight: normal;
+}
+
+.conteneur_consultation{
+display: flex;
+justify-content: center;
+padding: 15px;
+margin-top: 30px;
+margin-bottom: 30px;
+border-radius: 10px;
+background-color: #dcdddf;
+}
+
+.conteneur_consultation_courrier{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    background-color: #dcdddf;
+}
+
+.conteneur_consultation_pieces, .conteneur_consultation_remarque, .conteneur_consultation_echeance{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 15px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    background-color: #dcdddf;
+}
+.conteneur_consultation_echeance {
+    padding-left: 250px!important;
+    border-radius: 5px;
+}
+
+.conteneur_consultation_echeance > div:hover{
+    background-color: rgba(174, 174, 174, 0.3);
+}
+
+.conteneur_rappel p{
+    padding-left: 0px;
+}
+
+.conteneur_consultation_pieces div{
+    display: flex;
+    justify-content: center;
+}
+
+
+.consultation_fields{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 40%;
+}
+
+
+.sinistre_1{
+    margin-left: 40px;
+}
+
+.consultation_fields_episode{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 52%;
+}
+
+
+.consultation_fields_sinistre{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 45%;
+}
+
+.consulation_fields_remarque{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.consultation_label{
+    font-weight: bold;
+    padding-right: 0px;
+}
+
+.echeance_label{
+    font-weight: bold;
+    padding-left: 0px!important;
+    padding-right: 0px!important;
+    margin-right: 13px!important;
+}
+
+.libelle_courrier{
+    font-style: italic;
+}
+
+.courrier_infos{
+    width: 80%;
+    display: flex;
+    border-radius: 5px;
+    padding-top: 5px;
+}
+
+.courrier_infos:hover{
+    background-color: rgba(174, 174, 174, 0.45);
+
+}
+
+.courrier_edit{
+    width: 20%;
+    margin-bottom: 5px;
+}
+
+.conteneur_consultation_boutons, .conteneur_dossierEdit_boutons{
+    display: flex;
+    justify-content: center;
+}
+
+.consultation_etiquette_bouton, .consultation_edit_bouton{
+    margin: 0px 10px;
+    width: 14%;
+    padding: 5px;
+}
+
+.abandon_bouton, .validation_bouton{
+    margin: 0px 10px;
+    width: 12%;
+    padding: 5px;
+}
+
+.validation_bouton a{
+    color: white!important;
+}
+
+#form_edit_civ .select2-container--default, #form_edit_situation .select2-container--default{
+    width: 50%!important;
+}
+
+#form_edit_cloture .select2-container--default{
+    width: 33%!important;
+}
+
+#form_edit_origine .select2-container--default{
+    width: 42%!important;
+}
+
+#piece_select .select2-container--default{
+    width: 50%!important;
+    margin: 0px 30px 0px 15px;
+}
+
+#date_enr{
+    margin: 0px 30px 0px 15px;
+    height: 31px;
+}
+
+#bouton_piece_form{
+    height: 31px;
+}
+
+.select2-selection--single{
+    height: 30px!important;
+}
+
+.dossier_edit_field{
+    margin-top: 15px;
+}
+
+.dossier_edit_field_button{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 15px;
+}
+
+.label_form_edit{
+    margin-right: 15px;
+}
+
+.regime_rniam_row{
+    display: flex;
+    flex-direction: column;
+    /* align-items: flex-end; */
+    padding-right: 22px;
+}
+
+.regime_rniam_row div{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.echeance_row{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 5px;
+    border-radius: 5px;
+}
+
+.echeance_row:hover{
+    background-color: rgba(174, 174, 174, 0.45);
+
+}
+
+.date_fin_echeance{
+    padding-left: 0px!important;
+}
+
+.bouton_rappel_creer, .bouton_rappel_editer, .bouton_fin_echeance{
+    width: 12%;
+    text-align: center;
+    padding: 2px!important;
+}
+
+.echeance_row p{
+    padding-left: 15px;
+}
+
+.echeance_row div{
+    padding-left: 0px!important;
+}
+
+.subcont_echeance{
+    width: 100%;
+}
+
+#courrier_select{
+    display: flex;
+    width: 60%;
+    margin: 10px 0px;
+}
+
+#courrier_select p{
+    margin: 0px 15px;
+}
+
+#piece_select{
+    display: flex;
+    width: 90%;
+    justify-content: center;
+    margin: 10px auto 25px auto;
+}
+
+#service_select{
+    display: flex;
+    justify-content: center;
+    width: 70%;
+    margin: 10px auto 5px auto;
+}
+
+#remarque_edit{
+    display: flex;
+    justify-content: flex-start;
+    width: 70%;
+    margin: 20px auto;
+}
+
+#courrier_extra_fields{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 70%;
+    margin: 5px auto 10px auto;
+}
+
+.courrier_medecin_conseil{
+    display: none;
+    justify-content: center;
+    margin-left: 28px;
+    width: 100%;
+
+}
+.courrier_medecin_conseil label{
+    margin-right: 10px;
+}
+
+.courrier_medecin_conseil input{
+    width: 70%;
+}
+
+.courrier_service_medical{
+    display: none;
+    justify-content: center;
+    width: 50%;
+    margin-left: 95px;
+    margin-bottom: 15px;
+}
+
+.courrier_corps{
+    display: none;
+    justify-content: center;
+    margin-left: 135px;
+    margin-bottom: 15px;
+}
+
+.courrier_question{
+    display: none;
+    justify-content: center;
+    margin-left: 85px;
+    margin-bottom: 15px;
+}
+
+.conteneur_refus{
+    display: none;
+    align-items: flex-start;
+}
+
+.conteneur_refus label{
+    margin-left: 10px;
+    font-weight: normal;
+}
+
+#contestation_assure{
+    display: none;
+    margin-left: 70px;
+}
+
+#contestation_assure input{
+    margin: 0px 5px 7px 5px!important;
+}
+
+.conteneur_tables{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 15px auto 15px auto;
+}
+
+.bouton_table, .bouton_table2{
+    margin: 10px;
+    padding: 12px;
+    background-color: #8b98a5;
+}
+
+.bouton_table:hover{
+    background-color: #3c8dbc!important;
+}
+
+.bouton_table, .bouton_table2 a{
+    color: rgb(240, 240, 240)!important;
+    /* font-weight: bold; */
+    font-size: 1.6rem;
+}
+
+.bouton_suppression_admin{
+    margin-right: 2rem!important;
+}
+
+.admin_ajout{
+    /* display: flex; */
+    justify-content: center; 
+}
+
+.cell_action{
+    display: flex;
+    justify-content: space-around;
+}
+
+.btn_form{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.form_conteneur{
+    margin-left: 50px;
+    margin-top: 80px;
+}
+
+.form_conteneur div{
+    margin: 20px auto;
+    width: 40%;
+}
+
+.form_date_input .input-group{
+    margin: 0px;
+    width: 45%;
+}
+
+.conteneur_consultation_admin{
+    background-color: #dcdddf;
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+    margin-top: 50px;
+}
+
+.consultation_field_admin{
+    width: 100%;
+}
+
+.consultation_field_admin div{
+    display: flex;
+    align-items: flex-start;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.consultation_field_admin div p{
+    font-size: 1.7rem;
+}
+
+.conteneur_bouton_admin, .form_bouton_admin{
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.conteneur_bouton_admin p, .form_bouton_admin p{
+    margin: 10px;
+}
+
+.swal2-html-container{
+    font-size: 1.1em;
+}
+
+.swal2-cancel, .swal2-confirm{
+    font-size: 1.5em!important;
+    /* font-weight: bold!important; */
+}
+
+#conteneur_stats{
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+#conteneur_bnt_stat{
+    min-height: 15rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.btn_stat{
+    width: 15%;
+    background-color: lightgray;
+    margin: 0rem 1rem;
+}
+
+.btn_stat:hover{
+    color: white;
+    background-color: #3c8dbc;
+}
+
+.btn_actif{
+    color: white;
+    background-color: #3c8dbc;
+    
+}
+
+.chart_cancer_bloc{
+    margin-top: 5rem;
+}
+
+#conteneur_stat_assure, #conteneur_stat_courrier{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+#conteneur_stat_courrier div{
+    margin-bottom: 2rem;
+}
+
+#conteneur_datatable_echeance{
+    margin-top: 5rem !important;
+}
+
+#conteneur_datatable_echeance h3{
+    margin: 2rem 0rem;
+}
+
+#echeance_datatable, #demande_datatable{
+    text-align: center !important;
+}
+
+.export_btn{
+    margin: 2rem;
+}
+
+.export_btn a{
+    text-decoration: none;
+    color: white;
+}
+
+.am-bg-coul-brique-700{
+    display: none!important;
+}
+
+#badge_echeance_notif{
+    font-size: 1.2rem!important;
+
+}
+
+.icon_notif{
+    color: rgb(253, 214, 56)!important;
+}
+
+.icon_notif2{
+    color: rgb(255, 60, 60)!important;
+}
